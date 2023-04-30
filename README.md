@@ -1,6 +1,6 @@
 # vim-autoread
 > Updated fork of https://github.com/djoshea/vim-autoread, which is itself
-> a bundled form of this [script][1], now made fetchable by the [vim-plug] plugin manager.
+> a bundled form of this [script][1], now made fetchable by the [vim-plug][2] plugin manager.
 
 Automatically refreshes content displayed in vim / neovim files when they're changed by other users / processes. 
 Useful if you want to e.g. generate code in one process and edit the file directly in another. 
