@@ -1,6 +1,6 @@
 # vim-autoread
 > Updated fork of https://github.com/djoshea/vim-autoread, which is itself
-> a bundled form of this script_, made fetchable by the vim-plug_ plugin manager.
+> a bundled form of this [script][1], now made fetchable by the [vim-plug] plugin manager.
 
 Automatically updates content displayed in vim / neovim files when they're changed by other users / processes. 
 Useful if you want to e.g. generate code in one process and edit the file directly in another. 
@@ -19,6 +19,6 @@ Plug 'estill01/vim-autoread'
 call plug#end()
 ```
 
-.. _script: http://vim.wikia.com/wiki/Have_Vim_check_automatically_if_the_file_has_changed_externally
-.. _vim-plug: https://github.com/junegunn/vim-plug
+[1]: http://vim.wikia.com/wiki/Have_Vim_check_automatically_if_the_file_has_changed_externally
+[2]: https://github.com/junegunn/vim-plug
 
