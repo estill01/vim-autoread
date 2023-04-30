@@ -1,23 +1,24 @@
-============
-vim-autoread
-============
+# vim-autoread
+> Updated fork of https://github.com/djoshea/vim-autoread, which is itself
+> a bundled form of this script_, made fetchable by the vim-plug_ plugin manager.
 
-Automatically causes vim to reload files which have been written on disk but not
-modified in the buffer since the last write from vim. This enables a file open in
-vim to be edited using another application and saved. Upon returning to vim, 
-as long as you haven't modified the file since the last change, the file will be
-automatically updated to reflect the changes made on disk, as though you had pressed
-:e manually.
+Automatically updates content displayed in vim / neovim files when they're changed by other users / processes. 
+Useful if you want to e.g. generate code in one process and edit the file directly in another. 
 
-This is a bundled form of this script_ in order to be fetchable by Vundle_.
+
+## Installation
+
+Get set up with the fantastic `vim-plug` vim plugin manager:
+https://github.com/junegunn/vim-plug
+
+
+Then place this in `.vimrc` or e.g. `~/.config/nvim/init.vim` if you're using NeoVim:
+```
+call plug#begin()
+Plug 'estill01/vim-autoread'
+call plug#end()
+```
 
 .. _script: http://vim.wikia.com/wiki/Have_Vim_check_automatically_if_the_file_has_changed_externally
-.. _Vundle: https://github.com/gmarik/vundle
+.. _vim-plug: https://github.com/junegunn/vim-plug
 
-
-Installation
-============
-
-Place in your vim plugins folder or add to your .vimrc::
-
-    Bundle 'djoshea/vim-autoread'
